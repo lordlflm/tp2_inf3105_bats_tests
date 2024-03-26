@@ -14,12 +14,12 @@ git submodule add https://github.com/bats-core/bats-assert.git test/test_helper/
 test : exemple1.bats exemple2.bats exemple3.bats exemple3.bats exemple4.bats exemple5.bats exemple6.bats exemple7.bats exemple8.bats
 	make tp2
 	chmod u+x exemple1.bats exemple2.bats exemple3.bats exemple3.bats exemple4.bats exemple5.bats exemple6.bats exemple7.bats exemple8.bats
-	./test/bats/bin/bats exemple1.bats exemple2.bats exemple3.bats exemple4.bats exemple5.bats exemple6.bats exemple7.bats exemple8.bats
+	./test/bats/bin/bats ./tests/bats/exemple1.bats ./tests/bats/exemple2.bats ./tests/bats/exemple3.bats ./tests/bats/exemple4.bats ./tests/bats/exemple5.bats ./tests/bats/exemple6.bats ./tests/bats/exemple7.bats ./tests/bats/exemple8.bats
 ```
 
 ### Utilisation
 ```bash
-./test/bats/bin/bats ./exemple1.bats
+./test/bats/bin/bats ./tests/bats/exemple1.bats
 # ou
 make test
 ```
