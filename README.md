@@ -1,9 +1,10 @@
 ## Suite de test pour le tp2 d'IFN3105 hiver 2024
 ChatGPT a travailler fort la dessus. 
-- L'assertion ligne par ligne permet de pinpoint une difference dans la sortie.
-- J'assume qu'il n'y a qu'un espace avant `OK` ou `COMMANDE` dans l'action PRESCRIPTION.
+- L'assertion ligne par ligne permet de pinpoint une difference dans la sortie
+- J'assume qu'il n'y a qu'un espace avant `OK` ou `COMMANDE` dans l'action PRESCRIPTION
+- Les tests n'assure pas qu'il n'y a pas de lignes en trop dans la sortie
 ### Installation
-Assurez-vous que les fichiers `exemple[1-8].txt` sont dans un répertoire nommé `tests`
+Les fichiers `exemple[1-8].txt` sont dans le répertoire `tests`
 ```bash
 git submodule add https://github.com/bats-core/bats-core.git test/bats
 git submodule add https://github.com/bats-core/bats-support.git test/test_helper/bats-support
